@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home {
+  background-image: linear-gradient(to right, #0327c76b, #065fb857), url(../imgs/dots.png);
+}
+
+.quote-box {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.119);
+}
+
+.quote-text {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #333;
+}
+
+.quote-author {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.bg-body-tertiary {
+  background-color: rgb(239 239 239);
+}

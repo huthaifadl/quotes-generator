@@ -1,3 +1,4 @@
+/* General */
 * {
   box-sizing: border-box;
 }
@@ -7,12 +8,36 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.vh-50 {
+  height: 50vh;
+}
+
+
+/* Style */
+
 .home {
-  background-image: linear-gradient(to right, #0327c76b, #065fb857), url(../imgs/dots.png);
+  background-image: linear-gradient(to right, #0327c76b, #065fb857), url(../imgs/quote-bg.avif);
+  /* background-image: url(../imgs/quote-bg.avif); */
+}
+
+.t-head {
+  position: relative;
+  display: inline-block;
+}
+
+.t-head::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 200px;
+  background-color: #DC3545;
 }
 
 .quote-box {
-  background-color: #ffffff;
+  background-color: #dee2e6;
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.119);
@@ -22,6 +47,7 @@ body {
   font-size: 1.25rem;
   font-style: italic;
   color: #333;
+  font-weight: 500;
 }
 
 .quote-author {

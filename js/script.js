@@ -26,8 +26,19 @@ const quotes = [
   },
 ];
 
+let lastIndex = -1;
+
+
 function changeQuote () {
-    let randomQuote = quotes[Math.floor(quotes.length * Math.random())];
-    document.getElementById("quoteTextP").innerHTML = randomQuote.quoteText;
-    document.getElementById("quoteAuthor").innerHTML = `— ${randomQuote.author}`;
+  let randomIndex;
+
+  do {
+    randomIndex = Math.floor(quotes.length * Math.random())
+  } while (randomIndex === lastIndex);
+
+  const randomQuote = quotes[randomIndex];
+  document.getElementById("quoteTextP").innerHTML = randomQuote.quoteText;
+  document.getElementById("quoteAuthor").innerHTML = `— ${randomQuote.author}`;
+
+  lastIndex = randomIndex;
 }
